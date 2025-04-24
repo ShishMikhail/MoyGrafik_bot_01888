@@ -19,4 +19,5 @@
       4.7Подсчет общего количества часов работы сотрудника
 
 
-      ![image](https://github.com/user-attachments/assets/4cf0fa90-6fb7-442c-8a71-a80dc16d8e3a)
+
+![image](https://github.com/user-attachments/assets/4cd819c1-ed33-45c3-bdd7-c6034d51c01c)
