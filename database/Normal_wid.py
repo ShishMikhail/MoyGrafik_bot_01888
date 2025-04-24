@@ -43,7 +43,7 @@ def clean_and_normalize_data(file_path, table_structure):
 
 
 def main():
-    data_path = Path("C:\\Users\\shish.me\\PycharmProjects\\MoyGrafik_bot\\database")
+    data_path = Path("/Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database")
 
     csv_files = {
         'employees.csv': {

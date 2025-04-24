@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 class MoyGrafikAPI:
     def __init__(self, data_directory):
         # Инициализация токена и базовых URL для API
-        self.token = 'Bearer MTZjMGQxZmM3ZGZiYmVmMGVhMmEwMDNlZWRkMTQxNmQ2Y2YzMWJhYWIyODY3ZjMxNTQzMzE5ZGMxY2I4NDE2Zg'
+        self.token = 'Bearer ODczNmU3ODQwM2E4MjJlMmIwN2RjZmViMmI3NDA0ZGIyNmNkYTQ0OTgyOThmZGUyMjA5ODRiNGEzYjRhMWVlMw'
         self.base_url = 'https://api.moygrafik.ru/api/external/v1'
         self.headers = {'Authorization': self.token}
 
@@ -119,7 +119,7 @@ class MoyGrafikAPI:
 
 
 # Пример использования
-data_path = "C:\\Users\\shish.me\\PycharmProjects\\MoyGrafik_bot\\database"  # Укажите ваш путь здесь
+data_path = "/Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database"  # Укажите ваш путь здесь
 api = MoyGrafikAPI(data_path)
 company_id = 1525
 

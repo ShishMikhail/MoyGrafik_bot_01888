@@ -1,10 +1,6 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
-
-# Установите соединение с базой данных
-engine = create_engine('postgresql://postgres:WE010203ws@localhost:5432/postgres')
-
-
+from database.db import engine 
 def load_and_update_table(csv_file, table_name, key_columns):
     """
     Загрузка данных из CSV и обновление таблицы в БД.

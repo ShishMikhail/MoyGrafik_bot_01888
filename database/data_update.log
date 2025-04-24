@@ -1,0 +1,463 @@
+2025-04-24 10:11:40,969 - INFO - Начало обработки таблицы employees
+2025-04-24 10:11:40,997 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1755
+2025-04-24 10:11:41,453 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1755
+2025-04-24 10:11:41,479 - ERROR - Ошибка обновления таблицы employees: (psycopg2.errors.DatatypeMismatch) column "identification_photos" is of type double precision but expression is of type text
+LINE 17:                     identification_photos::TEXT,
+                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:11:41,481 - ERROR - Ошибка обработки таблицы employees: (psycopg2.errors.DatatypeMismatch) column "identification_photos" is of type double precision but expression is of type text
+LINE 17:                     identification_photos::TEXT,
+                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:14:28,172 - INFO - Начало обработки таблицы employees
+2025-04-24 10:14:28,184 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1755
+2025-04-24 10:14:28,526 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1755
+2025-04-24 10:14:28,529 - ERROR - Ошибка обновления таблицы employees: (psycopg2.errors.DatatypeMismatch) column "identification_photos" is of type double precision but expression is of type text
+LINE 17:                     identification_photos::TEXT,
+                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:14:28,530 - ERROR - Ошибка обработки таблицы employees: (psycopg2.errors.DatatypeMismatch) column "identification_photos" is of type double precision but expression is of type text
+LINE 17:                     identification_photos::TEXT,
+                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:17:03,593 - INFO - Начало обработки таблицы employees
+2025-04-24 10:17:03,606 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1755
+2025-04-24 10:17:03,970 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1755
+2025-04-24 10:17:03,999 - ERROR - Ошибка обновления таблицы employees: (psycopg2.errors.CardinalityViolation) ON CONFLICT DO UPDATE command cannot affect row a second time
+HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:17:04,000 - ERROR - Ошибка обработки таблицы employees: (psycopg2.errors.CardinalityViolation) ON CONFLICT DO UPDATE command cannot affect row a second time
+HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.
+
+[SQL: 
+                INSERT INTO employees (
+                    id, user_id, company_id, timezone_id, telegram_id,
+                    presence_close_rule, phone, identification_photos,
+                    identification_photos_count, preferred_photo, email,
+                    positions, avatar, avatar_big, placements, first_name,
+                    last_name, snils, clid, sites, subdivisions
+                )
+                SELECT
+                    id::BIGINT,
+                    user_id::DOUBLE PRECISION,
+                    company_id::BIGINT,
+                    timezone_id::BIGINT,
+                    telegram_id::DOUBLE PRECISION,
+                    presence_close_rule::DOUBLE PRECISION,
+                    phone::DOUBLE PRECISION,
+                    identification_photos::TEXT,
+                    identification_photos_count::DOUBLE PRECISION,
+                    preferred_photo::DOUBLE PRECISION,
+                    email::TEXT,
+                    positions::TEXT,
+                    avatar::TEXT,
+                    avatar_big::TEXT,
+                    placements::TEXT,
+                    first_name::TEXT,
+                    last_name::TEXT,
+                    snils::TEXT,
+                    clid::TEXT,
+                    sites::TEXT,
+                    subdivisions::TEXT
+                FROM employees_temp
+                ON CONFLICT (id) DO UPDATE SET
+                    user_id = EXCLUDED.user_id, company_id = EXCLUDED.company_id, timezone_id = EXCLUDED.timezone_id, telegram_id = EXCLUDED.telegram_id, presence_close_rule = EXCLUDED.presence_close_rule, phone = EXCLUDED.phone, identification_photos = EXCLUDED.identification_photos, identification_photos_count = EXCLUDED.identification_photos_count, preferred_photo = EXCLUDED.preferred_photo, email = EXCLUDED.email, positions = EXCLUDED.positions, avatar = EXCLUDED.avatar, avatar_big = EXCLUDED.avatar_big, placements = EXCLUDED.placements, first_name = EXCLUDED.first_name, last_name = EXCLUDED.last_name, snils = EXCLUDED.snils, clid = EXCLUDED.clid, sites = EXCLUDED.sites, subdivisions = EXCLUDED.subdivisions;
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-24 10:19:55,954 - INFO - Начало обработки таблицы placements
+2025-04-24 10:19:55,957 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/placements.csv, записей: 58
+2025-04-24 10:19:56,016 - INFO - Данные загружены во временную таблицу placements_temp, записей: 58
+2025-04-24 10:19:56,097 - INFO - Таблица placements полностью очищена
+2025-04-24 10:19:56,101 - INFO - Новые данные вставлены в таблицу placements
+2025-04-24 10:19:56,102 - INFO - Временная таблица placements_temp удалена
+2025-04-24 10:19:56,105 - INFO - Обработка таблицы placements завершена
+2025-04-24 10:19:56,105 - INFO - Начало обработки таблицы positions
+2025-04-24 10:19:56,107 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/positions.csv, записей: 264
+2025-04-24 10:19:56,132 - INFO - Данные загружены во временную таблицу positions_temp, записей: 264
+2025-04-24 10:19:56,138 - INFO - Таблица positions полностью очищена
+2025-04-24 10:19:56,142 - INFO - Новые данные вставлены в таблицу positions
+2025-04-24 10:19:56,144 - INFO - Временная таблица positions_temp удалена
+2025-04-24 10:19:56,147 - INFO - Обработка таблицы positions завершена
+2025-04-24 10:19:56,147 - INFO - Начало обработки таблицы subdivisions
+2025-04-24 10:19:56,150 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/subdivisions.csv, записей: 1278
+2025-04-24 10:19:56,233 - INFO - Данные загружены во временную таблицу subdivisions_temp, записей: 1278
+2025-04-24 10:19:56,256 - INFO - Таблица subdivisions полностью очищена
+2025-04-24 10:19:56,265 - INFO - Новые данные вставлены в таблицу subdivisions
+2025-04-24 10:19:56,266 - INFO - Временная таблица subdivisions_temp удалена
+2025-04-24 10:19:56,272 - INFO - Обработка таблицы subdivisions завершена
+2025-04-24 10:19:56,272 - INFO - Начало обработки таблицы employees
+2025-04-24 10:19:56,283 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1755
+2025-04-24 10:19:56,284 - WARNING - Найдены дубликаты в /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv: 1447 записей
+2025-04-24 10:19:56,302 - WARNING - Дубликаты:
+          id   user_id  ...  identification_photos_count  preferred_photo
+1      34730   34140.0  ...                          NaN              NaN
+2      53164   52156.0  ...                          NaN              NaN
+3      87090   86026.0  ...                          NaN              NaN
+4     106550  105703.0  ...                          NaN              NaN
+5      75045   73922.0  ...                          NaN              NaN
+...      ...       ...  ...                          ...              ...
+1750  105870  105007.0  ...                          NaN              NaN
+1751  105317  104449.0  ...                          NaN              NaN
+1752   98658   97732.0  ...                          NaN              NaN
+1753  100460   99557.0  ...                          NaN              NaN
+1754   96709   95754.0  ...                          NaN              NaN
+
+[1447 rows x 21 columns]
+2025-04-24 10:19:56,302 - INFO - После удаления дубликатов осталось записей: 1014
+2025-04-24 10:19:56,582 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1014
+2025-04-24 10:19:56,590 - INFO - Удалены связанные записи из таблицы presence_report
+2025-04-24 10:19:56,627 - ERROR - Ошибка при очистке и вставке данных в таблицу employees: (psycopg2.errors.ForeignKeyViolation) update or delete on table "user_settings" violates foreign key constraint "notifications_telegram_id_fkey" on table "notifications"
+DETAIL:  Key (telegram_id)=(1635081908) is still referenced from table "notifications".
+
+[SQL: DELETE FROM user_settings WHERE employee_id IN (SELECT id FROM employees);]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-24 10:19:56,628 - ERROR - Ошибка обработки таблицы employees: (psycopg2.errors.ForeignKeyViolation) update or delete on table "user_settings" violates foreign key constraint "notifications_telegram_id_fkey" on table "notifications"
+DETAIL:  Key (telegram_id)=(1635081908) is still referenced from table "notifications".
+
+[SQL: DELETE FROM user_settings WHERE employee_id IN (SELECT id FROM employees);]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-24 10:22:57,003 - INFO - Начало обработки таблицы placements
+2025-04-24 10:22:57,007 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/placements.csv, записей: 58
+2025-04-24 10:22:57,441 - INFO - Данные загружены во временную таблицу placements_temp, записей: 58
+2025-04-24 10:22:57,444 - INFO - Таблица placements полностью очищена
+2025-04-24 10:22:57,446 - INFO - Новые данные вставлены в таблицу placements
+2025-04-24 10:22:57,447 - INFO - Временная таблица placements_temp удалена
+2025-04-24 10:22:57,536 - INFO - Обработка таблицы placements завершена
+2025-04-24 10:22:57,536 - INFO - Начало обработки таблицы positions
+2025-04-24 10:22:57,538 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/positions.csv, записей: 264
+2025-04-24 10:22:57,642 - INFO - Данные загружены во временную таблицу positions_temp, записей: 264
+2025-04-24 10:22:57,645 - INFO - Таблица positions полностью очищена
+2025-04-24 10:22:57,647 - INFO - Новые данные вставлены в таблицу positions
+2025-04-24 10:22:57,648 - INFO - Временная таблица positions_temp удалена
+2025-04-24 10:22:57,951 - INFO - Обработка таблицы positions завершена
+2025-04-24 10:22:57,952 - INFO - Начало обработки таблицы subdivisions
+2025-04-24 10:22:57,955 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/subdivisions.csv, записей: 1278
+2025-04-24 10:22:58,212 - INFO - Данные загружены во временную таблицу subdivisions_temp, записей: 1278
+2025-04-24 10:22:58,214 - INFO - Таблица subdivisions полностью очищена
+2025-04-24 10:22:58,218 - INFO - Новые данные вставлены в таблицу subdivisions
+2025-04-24 10:22:58,220 - INFO - Временная таблица subdivisions_temp удалена
+2025-04-24 10:22:58,274 - INFO - Обработка таблицы subdivisions завершена
+2025-04-24 10:22:58,274 - INFO - Начало обработки таблицы employees
+2025-04-24 10:22:58,285 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1755
+2025-04-24 10:22:58,286 - WARNING - Найдены дубликаты в /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv: 1447 записей
+2025-04-24 10:22:58,301 - WARNING - Дубликаты:
+          id   user_id  ...  identification_photos_count  preferred_photo
+1      34730   34140.0  ...                          NaN              NaN
+2      53164   52156.0  ...                          NaN              NaN
+3      87090   86026.0  ...                          NaN              NaN
+4     106550  105703.0  ...                          NaN              NaN
+5      75045   73922.0  ...                          NaN              NaN
+...      ...       ...  ...                          ...              ...
+1750  105870  105007.0  ...                          NaN              NaN
+1751  105317  104449.0  ...                          NaN              NaN
+1752   98658   97732.0  ...                          NaN              NaN
+1753  100460   99557.0  ...                          NaN              NaN
+1754   96709   95754.0  ...                          NaN              NaN
+
+[1447 rows x 21 columns]
+2025-04-24 10:22:58,302 - INFO - После удаления дубликатов осталось записей: 1014
+2025-04-24 10:22:58,527 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1014
+2025-04-24 10:22:58,537 - INFO - Удалены связанные записи из таблицы notifications
+2025-04-24 10:22:58,544 - INFO - Удалены связанные записи из таблицы user_settings
+2025-04-24 10:22:58,553 - INFO - Удалены связанные записи из таблицы presence_report
+2025-04-24 10:22:58,581 - INFO - Таблица employees полностью очищена
+2025-04-24 10:22:58,593 - INFO - Новые данные вставлены в таблицу employees
+2025-04-24 10:22:58,595 - INFO - Временная таблица employees_temp удалена
+2025-04-24 10:22:58,663 - INFO - Обработка таблицы employees завершена
+2025-04-24 10:22:58,664 - INFO - Начало обработки таблицы presence_report
+2025-04-24 10:22:58,695 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/presence_report.csv, записей: 12986
+2025-04-24 10:22:59,386 - INFO - Данные загружены во временную таблицу presence_report_temp, записей: 12986
+2025-04-24 10:22:59,389 - INFO - Таблица presence_report полностью очищена
+2025-04-24 10:22:59,488 - INFO - Новые данные вставлены в таблицу presence_report
+2025-04-24 10:22:59,490 - INFO - Временная таблица presence_report_temp удалена
+2025-04-24 10:22:59,518 - INFO - Обработка таблицы presence_report завершена
+2025-04-24 10:30:06,752 - INFO - Начало обработки таблицы placements
+2025-04-24 10:30:06,757 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/placements.csv, записей: 58
+2025-04-24 10:30:06,844 - INFO - Данные загружены во временную таблицу placements_temp, записей: 58
+2025-04-24 10:30:06,846 - INFO - Таблица placements полностью очищена
+2025-04-24 10:30:06,848 - INFO - Новые данные вставлены в таблицу placements
+2025-04-24 10:30:06,850 - INFO - Временная таблица placements_temp удалена
+2025-04-24 10:30:06,853 - INFO - Обработка таблицы placements завершена
+2025-04-24 10:30:06,853 - INFO - Начало обработки таблицы positions
+2025-04-24 10:30:06,855 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/positions.csv, записей: 264
+2025-04-24 10:30:06,880 - INFO - Данные загружены во временную таблицу positions_temp, записей: 264
+2025-04-24 10:30:06,882 - INFO - Таблица positions полностью очищена
+2025-04-24 10:30:06,884 - INFO - Новые данные вставлены в таблицу positions
+2025-04-24 10:30:06,885 - INFO - Временная таблица positions_temp удалена
+2025-04-24 10:30:06,888 - INFO - Обработка таблицы positions завершена
+2025-04-24 10:30:06,888 - INFO - Начало обработки таблицы subdivisions
+2025-04-24 10:30:06,892 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/subdivisions.csv, записей: 1278
+2025-04-24 10:30:06,960 - INFO - Данные загружены во временную таблицу subdivisions_temp, записей: 1278
+2025-04-24 10:30:06,962 - INFO - Таблица subdivisions полностью очищена
+2025-04-24 10:30:06,965 - INFO - Новые данные вставлены в таблицу subdivisions
+2025-04-24 10:30:06,967 - INFO - Временная таблица subdivisions_temp удалена
+2025-04-24 10:30:06,972 - INFO - Обработка таблицы subdivisions завершена
+2025-04-24 10:30:06,972 - INFO - Начало обработки таблицы employees
+2025-04-24 10:30:06,983 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1762
+2025-04-24 10:30:06,984 - WARNING - Найдены дубликаты в /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv: 1456 записей
+2025-04-24 10:30:06,999 - WARNING - Дубликаты:
+          id   user_id  ...  identification_photos_count  preferred_photo
+1      34730   34140.0  ...                          NaN              NaN
+2      53164   52156.0  ...                          NaN              NaN
+3      87090   86026.0  ...                          NaN              NaN
+4     106550  105703.0  ...                          NaN              NaN
+5      75045   73922.0  ...                          NaN              NaN
+...      ...       ...  ...                          ...              ...
+1757  105870  105007.0  ...                          NaN              NaN
+1758  105317  104449.0  ...                          NaN              NaN
+1759   98658   97732.0  ...                          NaN              NaN
+1760  100460   99557.0  ...                          NaN              NaN
+1761   96709   95754.0  ...                          NaN              NaN
+
+[1456 rows x 21 columns]
+2025-04-24 10:30:07,000 - INFO - После удаления дубликатов осталось записей: 1014
+2025-04-24 10:30:07,146 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1014
+2025-04-24 10:30:07,153 - INFO - Удалены связанные записи из таблицы presence_report
+2025-04-24 10:30:07,155 - INFO - Удалены записи из user_settings, ссылающиеся на несуществующие employee_id
+2025-04-24 10:30:07,156 - INFO - Удалены записи из notifications, ссылающиеся на несуществующие telegram_id
+2025-04-24 10:30:07,168 - INFO - Добавлены новые сотрудники в user_settings
+2025-04-24 10:30:07,172 - ERROR - Ошибка при очистке и вставке данных в таблицу employees: (psycopg2.errors.ForeignKeyViolation) update or delete on table "employees" violates foreign key constraint "user_settings_employee_id_fkey" on table "user_settings"
+DETAIL:  Key (id)=(104102) is still referenced from table "user_settings".
+
+[SQL: DELETE FROM employees;]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-24 10:30:07,174 - ERROR - Ошибка обработки таблицы employees: (psycopg2.errors.ForeignKeyViolation) update or delete on table "employees" violates foreign key constraint "user_settings_employee_id_fkey" on table "user_settings"
+DETAIL:  Key (id)=(104102) is still referenced from table "user_settings".
+
+[SQL: DELETE FROM employees;]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-24 10:46:16,975 - INFO - Начало обработки таблицы placements
+2025-04-24 10:46:16,979 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/placements.csv, записей: 58
+2025-04-24 10:46:17,036 - INFO - Данные загружены во временную таблицу placements_temp, записей: 58
+2025-04-24 10:46:17,038 - INFO - Таблица placements полностью очищена
+2025-04-24 10:46:17,039 - INFO - Новые данные вставлены в таблицу placements
+2025-04-24 10:46:17,041 - INFO - Временная таблица placements_temp удалена
+2025-04-24 10:46:17,043 - INFO - Обработка таблицы placements завершена
+2025-04-24 10:46:17,044 - INFO - Начало обработки таблицы positions
+2025-04-24 10:46:17,046 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/positions.csv, записей: 264
+2025-04-24 10:46:17,070 - INFO - Данные загружены во временную таблицу positions_temp, записей: 264
+2025-04-24 10:46:17,072 - INFO - Таблица positions полностью очищена
+2025-04-24 10:46:17,073 - INFO - Новые данные вставлены в таблицу positions
+2025-04-24 10:46:17,074 - INFO - Временная таблица positions_temp удалена
+2025-04-24 10:46:17,078 - INFO - Обработка таблицы positions завершена
+2025-04-24 10:46:17,078 - INFO - Начало обработки таблицы subdivisions
+2025-04-24 10:46:17,082 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/subdivisions.csv, записей: 1278
+2025-04-24 10:46:17,150 - INFO - Данные загружены во временную таблицу subdivisions_temp, записей: 1278
+2025-04-24 10:46:17,152 - INFO - Таблица subdivisions полностью очищена
+2025-04-24 10:46:17,155 - INFO - Новые данные вставлены в таблицу subdivisions
+2025-04-24 10:46:17,157 - INFO - Временная таблица subdivisions_temp удалена
+2025-04-24 10:46:17,162 - INFO - Обработка таблицы subdivisions завершена
+2025-04-24 10:46:17,162 - INFO - Начало обработки таблицы employees
+2025-04-24 10:46:17,172 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv, записей: 1762
+2025-04-24 10:46:17,177 - WARNING - Найдены дубликаты в /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/employees.csv: 1456 записей
+2025-04-24 10:46:17,193 - WARNING - Дубликаты:
+          id   user_id  ...  identification_photos_count  preferred_photo
+1      34730   34140.0  ...                          NaN              NaN
+2      53164   52156.0  ...                          NaN              NaN
+3      87090   86026.0  ...                          NaN              NaN
+4     106550  105703.0  ...                          NaN              NaN
+5      75045   73922.0  ...                          NaN              NaN
+...      ...       ...  ...                          ...              ...
+1757  105870  105007.0  ...                          NaN              NaN
+1758  105317  104449.0  ...                          NaN              NaN
+1759   98658   97732.0  ...                          NaN              NaN
+1760  100460   99557.0  ...                          NaN              NaN
+1761   96709   95754.0  ...                          NaN              NaN
+
+[1456 rows x 21 columns]
+2025-04-24 10:46:17,194 - INFO - После удаления дубликатов осталось записей: 1014
+2025-04-24 10:46:17,344 - INFO - Данные загружены во временную таблицу employees_temp, записей: 1014
+2025-04-24 10:46:17,351 - INFO - Удалены связанные записи из таблицы presence_report
+2025-04-24 10:46:17,353 - INFO - Удалены записи из user_settings, ссылающиеся на текущие employee_id
+2025-04-24 10:46:17,354 - INFO - Удалены записи из notifications, ссылающиеся на несуществующие telegram_id
+2025-04-24 10:46:17,380 - INFO - Таблица employees полностью очищена
+2025-04-24 10:46:17,385 - INFO - Новые данные вставлены в таблицу employees
+2025-04-24 10:46:17,394 - INFO - Добавлены новые сотрудники в user_settings
+2025-04-24 10:46:17,396 - INFO - Временная таблица employees_temp удалена
+2025-04-24 10:46:17,412 - INFO - Обработка таблицы employees завершена
+2025-04-24 10:46:17,412 - INFO - Начало обработки таблицы presence_report
+2025-04-24 10:46:17,443 - INFO - Загружен CSV-файл: /Users/shish.me/PycharmProjects/MoyGrafik_bot_01/database/presence_report.csv, записей: 12986
+2025-04-24 10:46:17,954 - INFO - Данные загружены во временную таблицу presence_report_temp, записей: 12986
+2025-04-24 10:46:17,957 - INFO - Таблица presence_report полностью очищена
+2025-04-24 10:46:18,039 - INFO - Новые данные вставлены в таблицу presence_report
+2025-04-24 10:46:18,041 - INFO - Временная таблица presence_report_temp удалена
+2025-04-24 10:46:18,061 - INFO - Обработка таблицы presence_report завершена
