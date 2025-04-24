@@ -18,6 +18,14 @@
       4.7Выборка сотрудников и их отчетов о присутствии
       4.7Подсчет общего количества часов работы сотрудника
 
-
+Схема базы 
 
 ![image](https://github.com/user-attachments/assets/4cd819c1-ed33-45c3-bdd7-c6034d51c01c)
+
+Функционал который есть сейчас 
+
+![image](https://github.com/user-attachments/assets/c6a7f39e-0cd0-424b-b000-7ddb4a68a5c3)
+
+![image](https://github.com/user-attachments/assets/7711f0b2-884d-4f43-a7b9-d410973c4d4c)
+
+![image](https://github.com/user-attachments/assets/2cc57833-922b-45f1-b113-aa52f8c41f26)
